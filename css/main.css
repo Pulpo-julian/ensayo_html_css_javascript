@@ -1,6 +1,7 @@
 body {
     background-image: linear-gradient(to top, #30cfd0 0%, #422468 100%);
     background-size: 100vw, 100vh;
+    background-attachment: fixed;
 }
 
 .container  {
