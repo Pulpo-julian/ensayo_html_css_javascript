@@ -1,7 +1,11 @@
-body {
-    background-image: linear-gradient(to top, #30cfd0 0%, #422468 100%);
+html {
     background-size: 100vw, 100vh;
+}
+
+body {
+    background-image: linear-gradient(625deg, #30cfd0 0%, #422468 100%);
     background-attachment: fixed;
+    font-family: 'Dosis', sans-serif;
 }
 
 .container  {
@@ -12,7 +16,17 @@ body {
 
 .container .grupo {
     text-align: center;
+    background: linear-gradient(-45deg, #1325cc, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+	animation: gradient 6s ease infinite;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+
+
 
 .container p,
 .container div {
@@ -51,3 +65,16 @@ body {
     display: block;
     margin: auto;
 }
+
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  
